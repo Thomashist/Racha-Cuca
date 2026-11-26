@@ -1,2 +1,2 @@
 # Racha-Cuca
-Jogo Racha Cuca em C++
+Projeto Racha Cuca em C++
