@@ -15,7 +15,7 @@ int main(){
     cin >> N;
 
     //verificar se o valor digitado é valido
-    if(N < 2){
+    if(N < 2 || N > 6){
        cout << "Numero invalido, digite um valor entre 2 e 6." << endl;
     }
     //verificar se o valor digitado é valido
@@ -50,11 +50,19 @@ int main(){
         cout<< tabuleiro[i][j] << " ";
       }
     }
-    //imprimir uma linha em branco entre as linhas do tabuleiro
+    //passa para a proxima linha do tabuleiro
     cout<< "\n";
   }
 
-
-
+  int M = 0;
+  cout << "Digite o valor que deseja buscar no tabuleiro: ";
+  cin >> M;
+ for(int i=0; i < N; i++){
+   for(int j=0; j < N; j++){
+      if(tabuleiro[i][j] == M){
+         cout << "Valor encontrado na posicao (" << i << ", " << j << ")." << endl;
+      }
+   }
+ }
  return 0;
 }
